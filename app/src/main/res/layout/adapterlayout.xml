@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:elevation="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="3dp"
+    android:padding="4dp"
+    android:layout_marginStart="2dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:padding="3dp"
+        android:elevation="4dp"
+        app:cardElevation="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#292036"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circular1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="3dp"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/circular1"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:text="Access bank"
+                android:id="@+id/bnk"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/bnk"
+               android:layout_centerHorizontal="true"
+               android:text="#90999"
+               android:textColor="@color/white"
+               android:layout_toRightOf="@id/circular1"
+               android:layout_marginStart="8dp"
+               android:textStyle="italic"
+               android:layout_marginTop="2dp"
+               android:id="@+id/code"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+        
+
+</androidx.cardview.widget.CardView>
